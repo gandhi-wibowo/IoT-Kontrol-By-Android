@@ -5,7 +5,7 @@ package com.skripsi.saklarnyagandhi;
  */
 
 public class Constant {
-    public static final String url_base = "http://192.168.0.100/project/saklar/";
+    public static final String url_base = "http://kuliketik.id/galoeng/";
     public static final String url_saklar = url_base + "Saklar/" ;
     public static final String url_gas = url_base + "Gas/" ;
     public static final String url_cek = url_base + "Welcom/" ;
