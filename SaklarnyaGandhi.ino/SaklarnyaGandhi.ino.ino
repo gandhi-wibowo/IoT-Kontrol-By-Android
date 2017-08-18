@@ -21,7 +21,7 @@ void loop()
 {
     if((WiFiMulti.run() == WL_CONNECTED)){
         HTTPClient http,httpgas;
-        httpgas.begin("http://kuliketik.id/galoeng/Gas");
+        httpgas.begin("url/API/Gas");
         
         int httpCodeGas = httpgas.GET();
         if(httpCodeGas > 0){
@@ -63,7 +63,7 @@ void loop()
           digitalWrite(15, HIGH);
         }                    
         
-        http.begin("http://kuliketik.id/galoeng/Saklar");
+        http.begin("url/API/Saklar");
         int httpCode = http.GET();
         if(httpCode > 0){
             if(httpCode == HTTP_CODE_OK){
